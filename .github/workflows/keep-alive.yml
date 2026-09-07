@@ -18,7 +18,7 @@ jobs:
 
       - name: Insert heartbeat row into Supabase
         run: |
-          curl -X POST "${{ secrets.SUPABASE_URL }}/rest/v1/_heartbeat" \
+          curl -f -sS -X POST "${{ secrets.SUPABASE_URL }}/rest/v1/_heartbeat" \
             -H "apikey: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
             -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
             -H "Content-Type: application/json" \
