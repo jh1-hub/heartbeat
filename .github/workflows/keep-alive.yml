@@ -2,7 +2,7 @@ name: Supabase Keep-Alive
 
 on:
   schedule:
-    - cron: '0 3 * * 1'  # 毎週月曜 12:00 JST(UTC 3:00）に実行
+    - cron: '17 3 * * 1'  # 毎週月曜 12:00 JST(UTC 3:00）に実行
   workflow_dispatch:      # 手動実行ボタンも使えるようにする
 
 jobs:
